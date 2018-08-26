@@ -1,0 +1,295 @@
+body, html {
+    font-family: "Open Sans";
+    width: 1000px;
+    height: 1045px;
+    margin: 0 auto;
+}
+.carrefour-header {
+    display: flex; /* or inline-flex */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3rem 0 70px 0;
+}
+.carrefour-header-items {
+    margin-left: 100px;
+}
+.carrefour-header-search {
+    border-radius: 4px;
+    background-color: #f0f7fe;
+    width: 50px;
+    height: 40px;   
+}
+.carrefour-header-search-items div img {
+    margin: 12px 17px;
+}
+.carrefour-header-search-items {
+    padding: 19px 9.9rem 0 0;
+    display: inherit;
+}
+
+.carrefour-loginform {
+    border: 3px solid #f7f7f7;
+    width: 400px;
+    height: 406px;
+    margin: 0px 300px 70px 300px;
+}
+
+.login-container {
+    width: 100%;
+    text-align: center;
+}
+
+.login-form {
+    margin-bottom: 24px;
+}
+.carrefour-login-header {
+
+    padding: 30px 0 0 0;
+    font-size: 24px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 22px;
+    color: rgb(65,65,65);
+    font-weight: bold;
+}
+
+.carrefour-login-subheader {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgb(51,51,51);
+    margin-bottom: 10px;
+}
+
+.carrefour-input{
+    width: 300px;
+    height: 44px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #f6f6f6;
+    padding-left: 21px;
+    color: rgb(221,221,221);
+    font-weight: bold;
+    color: rgb(65,65,65);
+    font-size: 16px;
+}
+*:focus {
+    outline: none;
+}
+
+.carrefour-input:focus {
+    border: 1px solid #05539f;
+    -moz-box-shadow:    0.6px 0.6px 0.6px  #e2f1ff;
+    -webkit-box-shadow: 0.6px 0.6px 0.6px #e2f1ff;
+    box-shadow:         -1px 1px 1px 3px #e2f1ff;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 14px;
+    color: rgb(221,221,221);
+    font-weight: bold;
+    
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 14px;
+    color: rgb(221,221,221);
+    font-weight: bold;
+}
+cursor {
+    width: 1px;
+    height: 25px;
+    background-color: #000000;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    font-size: 14px;
+    color: rgb(221,221,221);
+    font-weight: bold;
+}
+
+.carrefour-status {
+    margin-bottom: 24px;
+}
+.checkbox-status {
+    margin-right: 98px;
+    font-size: 12px;
+    color: rgba(65, 65, 65, 255);
+}
+
+.password-resend {
+    font-size: 12px;
+    color: rgb(5,84,159);
+    text-decoration: none;
+}
+
+.checkbox-status input {
+    margin-right: 11px;
+}
+
+input[type="checkbox"]{
+    outline:2px solid red;
+    outline-offset: -2px;
+}
+
+.carrefour-sigin {
+    font-size: 20px;
+    color: rgb(255,255,255);
+    font-weight: bold;
+    width: 325px;
+    height: 50px;
+    background: #05549f;
+    margin: 0 auto;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.divider {
+    border: 0.8px solid #f6f6f6;
+    width: 78%;
+    margin: 0 0 70px 100px;
+}
+
+.carrefour-products {
+    display: flex;
+    height: 220px;
+    width: 220px;
+    margin-left: 100px;
+}
+.carrefour-products > div * {
+    margin-right:70px;
+}
+.carrefour-items img {
+    border: 3px solid #f6f6f6;
+}
+
+.product-details {
+    margin-top: 10px;
+}
+.name {
+    font-size: 14px;
+    color: rgb(65,65,65);
+    margin-bottom: 2px;
+}
+
+.cost {
+    font-size: 18px;
+    color: rgb(0,0,0);
+    font-weight: bold;
+}
+
+/* The container */
+.container {
+    position: relative;
+    padding-left: 27px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 12px;
+    color: rgba(65, 65, 65);
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 21px;
+    width: 21px;
+    background-color: #05549f;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #05549f;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #05549f;
+    border-radius: 3px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    border-radius: 3px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.inputlables {
+    font-size: 14px;
+    color: rgb(65,65,65);
+    font-weight: bold;
+    font-style: italic;
+    text-align: right;
+    margin: 0px 0 9px 37px;
+    float: left;
+}
+.noLable {
+    visibility: hidden;
+}
+
+.error{
+    font-size: 12px;
+    color: rgb(246,48,63);
+    margin-right: 40px;
+    width: 112px;
+    height: 23px;
+    background-color: #fff0f1;
+    float: right;
+    line-height: 2;
+    margin-top: 10px;
+}
+
+.noerror {
+    visibility: hidden;
+}
+
+.carrefour-input-error {
+    border: 1px solid rgb(246,48,63);
+}
+
+.home-input {
+    height: 38px;
+    width: 200px;
+    border: 0;
+    background-color: #f0f7fe;
+    font-size: 14px;
+    color: rgb(0,0,0);
+    padding-left: 20px;
+}
+
+.initial {
+    display: none;
+}
