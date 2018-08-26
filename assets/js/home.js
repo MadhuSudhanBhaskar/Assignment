@@ -1,13 +1,21 @@
 $( document ).ready(function() {
 
+    var username = $( '#username' );
+    var password = $( '#password' );
     //Key up for form elements check the status
     //and enable the lable(hide and show)
-    $( '#username' ).keyup(function(eventData) {
-        inputLable(this.value, 'lable.username');
+    username.keyup(function(eventData) {
+        inputLable(this.value, 'label.username');
+    });
+    username.focus(function(eventData) {
+        $('label.username').removeClass( "noLable", 2000, "linear" );
     });
 
     $( '#password' ).keyup(function(eventData) {
-        inputLable(this.value, 'lable.password');
+        inputLable(this.value, 'label.password');
+    });
+    password.focus(function(eventData) {
+        $('label.password').removeClass( "noLable", 2000, "linear" );
     });
 
     //Ganeric function to handel adding and removing class
